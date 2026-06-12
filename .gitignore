@@ -1,0 +1,11 @@
+node_modules
+dist
+.vite
+*.local
+
+# Local tunnel/runtime artifacts
+.tools/
+.ngrok-url.txt
+.server.pid
+.tunnel.pid
+
