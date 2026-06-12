@@ -626,8 +626,8 @@ function ExpenseForm({ expense, onSave, onClose, language, t }) {
             <b>Rp</b>
             <input
               type="number"
-              min="0"
-              step="1000"
+              min="1"
+              step="1"
               inputMode="numeric"
               value={form.amount}
               onChange={(event) => update("amount", event.target.value)}
@@ -704,7 +704,7 @@ function BudgetDialog({ budget, onSave, onClose, t }) {
           <span>{t.monthlyBudget}</span>
           <div className="money-input">
             <b>Rp</b>
-            <input type="number" min="0" step="100000" inputMode="numeric" value={value} onChange={(event) => { setValue(event.target.value); setError(""); }} placeholder={t.budgetPlaceholder} autoFocus />
+            <input type="number" min="1" step="1" inputMode="numeric" value={value} onChange={(event) => { setValue(event.target.value); setError(""); }} placeholder={t.budgetPlaceholder} autoFocus />
           </div>
           {error && <small>{error}</small>}
         </label>

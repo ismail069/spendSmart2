@@ -34,6 +34,8 @@ html { min-width: 320px; background: #f5f7fb; }
 html[data-theme="dark"] { background: #0c111c; color-scheme: dark; }
 body { margin: 0; min-width: 320px; min-height: 100vh; background: inherit; }
 button, input, select { font: inherit; }
+select option { color: #172033; background: #ffffff; }
+html[data-theme="dark"] select option { color: #e9eef9; background: #202938; }
 button { cursor: pointer; }
 button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid rgba(37, 99, 235, 0.25); outline-offset: 2px; }
 .modal-open { overflow: hidden; }
